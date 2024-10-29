@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Places</title>
+</head>
+<body>
+    <section>
+        <div class="bannerVideo" id="slideShow">
+            <video src="images/dubai.mp4" autoplay muted loop class="active"></video>
+            <video src="images/newyork.mp4" autoplay muted loop></video>
+            <video src="images/seul.mp4" autoplay muted loop></video>
+            <video src="images/baviera.mp4" autoplay muted loop></video>
+        </div>
+        <div class="container">
+            <header id="navbar">
+                <a href="#" class="logo">World</a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu()"></span>
+            </header>
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active">
+                        <h2>Dubai</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis eligendi dignissimos assumenda officiis officia repudiandae voluptas cupiditate tempora ea fuga, pariatur expedita itaque dicta quas vitae nisi veniam? Nostrum.</p>
+                    </div>
+                    <div>
+                        <h2>New York</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis eligendi dignissimos assumenda officiis officia repudiandae voluptas cupiditate tempora ea fuga, pariatur expedita itaque dicta quas vitae nisi veniam? Nostrum.</p>
+                    </div>
+                    <div>
+                        <h2>Seul</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis eligendi dignissimos assumenda officiis officia repudiandae voluptas cupiditate tempora ea fuga, pariatur expedita itaque dicta quas vitae nisi veniam? Nostrum.</p>
+                    </div>
+                    <div>
+                        <h2>Baviera</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis eligendi dignissimos assumenda officiis officia repudiandae voluptas cupiditate tempora ea fuga, pariatur expedita itaque dicta quas vitae nisi veniam? Nostrum.</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="controls">
+                <li onclick="prevSlide(); prevSlideText();"><img src="images/left.png"></li>
+                <li onclick="nextSlide(); nextSlideText();"><img src="images/right.png"></li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
